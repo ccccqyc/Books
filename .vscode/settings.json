@@ -1,3 +1,7 @@
 {
-    "files.autoSave": "onWindowChange"
+    "files.autoSave": "onWindowChange",
+    "files.associations": {
+        "*.cpp": "cpp",
+        "type_traits": "cpp"
+    }
 }
