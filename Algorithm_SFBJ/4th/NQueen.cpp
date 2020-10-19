@@ -1,4 +1,4 @@
-#include <cmath>
+ #include <cmath>
 #include <cstdio>
 const int MAXN = 11;
 using namespace std;
