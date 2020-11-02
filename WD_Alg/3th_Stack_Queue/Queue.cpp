@@ -13,9 +13,9 @@ typedef struct Queue {
 } SqQueue;
 
 // 链式存储
-typedef struct {
+typedef struct tagLinkNode{
     Elemtype data;
-    struct LinkNode *next;
+    struct tagLinkNode *next;
 } LinkNode;  //链式队列结点
 typedef struct {
     LinkNode *front, *rear;
