@@ -27,6 +27,7 @@ int Width(BitTree T) {
         if(p->rchild){
             Enqueue(Q,p);
         }
+        
     }
 
     return width;
