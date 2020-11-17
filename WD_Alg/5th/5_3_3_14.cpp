@@ -34,9 +34,10 @@ int Width(BitTree T) {
     return width;
 }
 
+
 typedef struct {
-    BitTree data[MaxSize];
-    int level[MaxSize];
+    BitTree data[MaxSize];//保存队列结点指针
+    int level[MaxSize]; // 保存data中相同下标结点层次
     int front, rear;
 } QU;
 // 层次遍历 所有结点层次
@@ -49,8 +50,8 @@ int BitWidth(BitTree b) {
     int k, max, i, n;
     Qu.front = Qu.rear = -1;  //队空
     Qu.rear++;
-    Qu.data[Qu.rear] = b;
-    Qu.level[Qu.rear] = 1;
+    Qu.data[Qu.rear] = b; // 根节点指针入队
+    Qu.level[Qu.rear] = 1; // 根节点层次
     while (Qu.front < Qu.rear) {
         Qu.front++;
         p = Qu.data[Qu.front];
